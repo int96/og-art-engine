@@ -28,8 +28,8 @@ const outputJPEG = false; // if false, the generator outputs png's
 const startIndex = 0;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1080,
+  height: 1080,
   smoothing: true, // set to false when up-scaling pixel art.
 };
 
@@ -46,15 +46,18 @@ const layerConfigurations = [
       { name: "Background" },
       {
         name: "Back Accessory",
-        // options: {
-        //   bypassDNA: true,
-        // },
+        sublayerOptions: {
+          "Backpack#50": { trait: "Backpack Accessory" },
+//          "Backpack#25": { trait: "LotKB" },
+        },
       },
       { name: "Head" },
       { name: "Clothes" },
       { name: "Eyes" },
       { name: "Hair" },
       { name: "Head Accessory" },
+      
+      // helmet#10 folder goes
       { name: "Shirt Accessories" },
     ],
   },
